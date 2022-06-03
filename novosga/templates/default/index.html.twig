@@ -2,14 +2,18 @@
 
 {% block body %}
     <div class="jumbotron">
+	<!-- VBSX V.0.1 Contato pelo Github: https://github.com/vbsx -->
         <div class="container">
             <h1>{{ 'home.welcome.title'|trans({'%name%': app.user }) }}</h1>
-            <p>{{ 'home.welcome.subtitle'|trans }}</p>
+            <p>SGA VBSX - Sistema de Gerenciamento de Atendimento</p>
             <p>
                 <a class="btn btn-primary btn-lg" href="{{ path('about') }}" role="button">
                     {{ 'home.welcome.button.read'|trans }} &raquo;
                 </a>
             </p>
+            <video width="480px" height="270px" preload="" autoplay controls>
+                <source src="{{ asset("videos/athenavideo.mp4") }}" type="video/mp4" style="top:300px; right:0px">
+            </video>
         </div>
     </div>
 {% endblock %}
@@ -20,5 +24,6 @@
         body>section {
             padding: 20px 0;
         }
+	<!-- VBSX V.0.1 Contato pelo Github: https://github.com/vbsx -->
     </style>
 {% endblock %}

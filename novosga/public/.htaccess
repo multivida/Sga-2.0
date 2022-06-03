@@ -4,4 +4,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [QSA,L]
 SetEnv APP_ENV prod
 SetEnv LANGUAGE pt_BR
-SetEnv DATABASE_URL mysql://novosga_us:123456@localhost:3306/novosga_db
+SetEnv DATABASE_URL mysql://novosga_us:123456@127.0.0.1:3306/novosga_db

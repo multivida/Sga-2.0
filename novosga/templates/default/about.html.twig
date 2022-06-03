@@ -6,7 +6,7 @@
 
 {% block body %}
     <div class="jumbotron">
-        <h1>{{ 'about.version.title'|trans({'%version%': version}) }}</h1>
+        <h1>SGA VBSX V.0.1</h1>
         <p>{{ 'about.version.subtitle'|trans }}</p>
         <p>
             <button id="btn-checkversion" class="btn btn-secondary btn-lg" role="button">
@@ -14,8 +14,8 @@
                 {{ 'about.version.check_new'|trans }}
             </button>
             <a id="btn-downloader" href="#" class="btn btn-success btn-lg" role="button" target="_blank" style="display:none">
-                <i class="fa fa-download"></i>
-                {{ 'about.version.download'|trans }} <span class="version"></span>
+                <i class="fa fa-download">ATUALIZADO!!</i>
+                 <p>ATUALIZADO!</p> <span class="version"></span>
             </a>
             <span id="update-alert" class="label label-success" style="display:none">
                 <i class="fa fa-check"></i>
@@ -29,12 +29,12 @@
         <div class="col-lg-4">
             <div class="card">
                 <div class="card-header">
-                    {{ 'about.community.blog.title'|trans }}
+                    <p>Problemas</p>
                 </div>
                 <div class="card-body">
-                    <p>{{ 'about.community.blog.description'|trans }}</p>
+                    <p>Caso tenha algum problema ou duvida, abra um chamado imediatamente. </p>
                     <p>
-                        <a href="https://medium.com/novosga" class="btn btn-primary" target="_blank">
+                        <a href="https://athena.fluig.com/portal/p/1/home" class="btn btn-primary" target="_blank">
                             <i class="fa fa-eye"></i>&nbsp;
                             {{ 'about.community.blog.button'|trans }}
                         </a>
@@ -44,18 +44,7 @@
         </div>
         <div class="col-lg-4">
             <div class="card">
-                <div class="card-header">
-                    {{ 'about.community.forum.title'|trans }}
-                </div>
-                <div class="card-body">
-                    <p>{{ 'about.community.forum.description'|trans }}</p>
-                    <p>
-                        <a href="https://discuss.novosga.org" class="btn btn-primary" target="_blank">
-                            <i class="fa fa-eye"></i>&nbsp;
-                            {{ 'about.community.forum.button'|trans }}
-                        </a>
-                    </p>
-                </div>
+              
            </div>
         </div>
         <div class="col-lg-4">
@@ -64,9 +53,9 @@
                     {{ 'about.community.github.title'|trans }}
                 </div>
                 <div class="card-body">
-                    <p>{{ 'about.community.github.description'|trans }}</p>
+                    <p>Acesse nosso Github para ver projetos atuais e futuros projetos.</p>
                     <p>
-                        <a href="https://github.com/novosga" class="btn btn-primary" target="_blank">
+                        <a href="https://github.com/VBSX" class="btn btn-primary" target="_blank">
                             <i class="fa fa-eye"></i>&nbsp;
                             {{ 'about.community.github.button'|trans }}
                         </a>
@@ -104,7 +93,7 @@
                         if (App.version !== latest.name.replace('v', '')) {
                             $('#btn-downloader')
                                 .show()
-                                .prop('href', 'https://github.com/novosga/novosga/releases/' + latest.name)
+                                .prop('href', 'https://github.com/VBSX' )
                                 .find('.version')
                                 .text(latest.name);
                         } else {
